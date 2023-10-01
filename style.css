@@ -70,14 +70,14 @@ body {
     cursor: pointer;
 }
 
-#timer {
-    width: 10%;
+#time {
+    /* width: 10%;
     position: absolute;
     top: 5vh;
     right: 5vh;
     font-size: 6vw;
     border: 1px solid white;
-    border-radius: 3px;
+    border-radius: 3px; */
 }
 #score {
     width: 10%;
