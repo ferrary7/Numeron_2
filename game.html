@@ -1,33 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Numeron</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <!-- Include Bootstrap CSS from CDN -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="game">
+    <div class="container-fluid">
+      <div class="row justify-content-center">
+        <div class="col-md-6 text-center">
+          <div>
+            <div id="instructions" class="container">Guess the Operator</div>
+            <br />
+            <div class="flex-centered">
+              <div>
+                <h2>Timer :</h2>
+              </div>
+              <div
+                id="timer"
+                class="flex-centered"
+                style="font-size: 6vw; margin-top: 10px; margin-bottom: 10px"
+              ></div>
+            </div>
 
-<body class="game flex-centered">
-    <div id="timer" class="flex-centered"></div>
-    <div id="score" class="flex-centered"></div>
-    <div id="instructions">Guess the Operator</div>
-    <div id="numbers">
-        <div id="number1" class="number-holder flex-centered"></div>
-        <div>?</div>
-        <div id="number2" class="number-holder flex-centered"></div>
-        <div>=</div>
-        <div id="number3" class="number-holder flex-centered"></div>
-    </div>
-    <div id="buttons" class="flex-centered">
-        <img src="./assets/Numeron_plus.png" alt="" id="plus" class="button">
-        <img src="./assets/Numeron_minus.png" alt="" id="minus" class="button">
-        <img src="./assets/Numeron_mul.png" alt="" id="multiply" class="button">
-        <img src="./assets/Numeron_div.png" alt="" id="divide" class="button">
-        <img src="./assets/Numeron_per.png" alt="" id="modulus" class="button">
+            <div id="score" class="flex-centered"></div>
+          </div>
+          <div id="numbers" class="container">
+            <div id="number1" class="number-holder flex-centered"></div>
+            <div>?</div>
+            <div id="number2" class="number-holder flex-centered"></div>
+            <div>=</div>
+            <div id="number3" class="number-holder flex-centered"></div>
+          </div>
+          <div id="buttons" class="flex-centered" style="flex-direction: row">
+            <div style="flex-direction: row">
+              <img
+                src="./assets/Numeron_plus.png"
+                alt=""
+                id="plus"
+                class="button"
+              />
+              <img
+                src="./assets/Numeron_minus.png"
+                alt=""
+                id="minus"
+                class="button"
+              />
+              <img
+                src="./assets/Numeron_mul.png"
+                alt=""
+                id="multiply"
+                class="button"
+              />
+            </div>
+            <div style="flex-direction: row">
+              <img
+                src="./assets/Numeron_div.png"
+                alt=""
+                id="divide"
+                class="button"
+              />
+              <img
+                src="./assets/Numeron_per.png"
+                alt=""
+                id="modulus"
+                class="button"
+              />
+              <img
+                src="./assets/Numeron_per.png"
+                alt=""
+                id="modulus"
+                class="button"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
+    <!-- Include Bootstrap JS and jQuery from CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="./game.js"></script>
-</body>
-
+  </body>
 </html>
