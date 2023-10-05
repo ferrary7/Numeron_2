@@ -7,7 +7,7 @@
 }
 
 .game-cover {
-    background: url("http://i1.faceprep.in/prograd-junior/numeron-bg.png") no-repeat;
+    background: url("/assets/numeron-bg-min.png") no-repeat;
     background-size: cover;
 }
 
@@ -25,7 +25,7 @@ body {
 }
 
 .game {
-    background: url("http://i1.faceprep.in/prograd-junior/game-inside-bg.png") no-repeat;
+    background: url("/assets/game-inside-bg-min.png") no-repeat;
     background-size: cover;
 }
 
@@ -70,14 +70,14 @@ body {
     cursor: pointer;
 }
 
-#timer {
-    width: 10%;
+#time {
+    /* width: 10%;
     position: absolute;
     top: 5vh;
     right: 5vh;
     font-size: 6vw;
     border: 1px solid white;
-    border-radius: 3px;
+    border-radius: 3px; */
 }
 #score {
     width: 10%;
